@@ -1,0 +1,87 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  
+  background: #1056bfd2;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #0a1931;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.btn {
+  background: #ff6b00;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0a1931, #185adb);
+  color: white;
+}
+
+.products {
+  padding: 40px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0…
+[21:38, 04/05/2026] najib bashir sadi: JavaScript
+function validateSignup() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+
+  if (name === "" || email === "" || password === "") {
+    alert("Please fill all fields");
+    return false;
+  }
+  return true;
+}
+
+function validateLogin() {
+  let email = document.getElementById("loginEmail").value;
+  let password = document.getElementById("loginPassword").value;
+
+  if (email === "" || password === "") {
+    alert("All fields required");
+    return false;
+  }
+  return true;
+}}
